@@ -7,7 +7,7 @@ const route = require('./routes/routes');
 const app = express();
 app.use(express.json());
 
-app.use('/api', route);
+app.use('/', route);
 
 mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://laxmiyadav:12345@cluster0.ovljd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
